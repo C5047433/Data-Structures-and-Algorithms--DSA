@@ -96,3 +96,16 @@ Understand tree views (left, right, top, bottom) and different tree types.
 
 29. DSA: Trees 3: BST
 Learn about Binary Search Trees (BST) and solve BST-related problems.
+
+
+How to Use This Repository
+Clone the repository to your local machine.
+Follow the topics sequentially to build your understanding step-by-step.
+Solve the problems provided under each topic and review the solutions for guidance.
+
+
+Contributions are welcome! Feel free to submit pull requests to add more problems, improve explanations, or suggest new topics.
+
+Happy Learning! 🚀
+
+
