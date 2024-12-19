@@ -1,7 +1,7 @@
 Data Structures and Algorithms (DSA) Repository
 Welcome to the Data Structures and Algorithms repository! This repository is a comprehensive collection of DSA concepts organized into levels to facilitate systematic learning. Whether you are preparing for interviews or honing your problem-solving skills, this repository has you covered.
 
-<============================  LEVEL-1: Fundamentals of DSA  ==================================================>
+<=========== LEVEL-1: Fundamentals of DSA ========================>
 
 1. DSA: Time Complexity
 Understand the efficiency of algorithms by analyzing their time and space complexity.
@@ -32,7 +32,7 @@ Understand operations and problem-solving techniques using two-dimensional array
 Learn the fundamentals of bitwise operations and their applications in optimization.
 
 
-<============================  LEVEL-2: Intermediate Concepts  ==================================================>
+<============= LEVEL-2: Intermediate Concepts  ===========================>
 
 10. DSA: Arrays 1: One Dimensional
 Solve intermediate-level problems focused on one-dimensional arrays.
@@ -62,7 +62,7 @@ Solve practical problems using hashing techniques for efficient lookups.
 Dive deeper into advanced sorting algorithms like Count Sort and Merge Sort.
 
 
-<============================  LEVEL-3: Advanced Concepts  ==================================================>
+<================ LEVEL-3: Advanced Concepts  =====================>
 
 19. DSA: Searching 1: Binary Search on Array
 Learn the fundamentals of binary search and its application in sorted arrays.
