@@ -38,26 +38,19 @@ B = [3,4]
 Example Output
 
 Output 1:
-
-
 3
 
 
 Output 2:
-
-
 3
 
 
 Example Explanation
 
 Example 1:
-
-
 merged array = [1,2,3] and median is 2.
+
 Example 2:
-
-
 merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2
 
 
