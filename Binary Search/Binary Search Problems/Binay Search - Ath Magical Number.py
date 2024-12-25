@@ -72,39 +72,6 @@ Numbers divisible by B and C in a range of [1,M] is given by M/B + M/C - M/lcm(B
 
 
 CODE:
-
-class Solution:
-    # @param A : integer
-    # @param B : integer
-    # @param C : integer
-    # @return an integer
-    def solve(self, A, B, C):
-        '''Numbers divisible by B and C in a range of [1,M] is given by M/B + M/C - M/lcm(B,C)'''
-        l=1
-        h=min(B,C)*A #10**18 
-        while l<=h:
-            mid=(l+h)//2
-            count = self.findcount(mid,B,C)
-            #print("l,h,mid",l,h,mid)
-            if count < A:
-                l = mid+1
-            else:
-                h = mid-1
-        return l%((10**9)+7) 
-        
-    def gcd(self,B,C):
-        if C == 0:
-            return B
-        return self.gcd(C, B%C)
-
-    def lcm(self,B,C):
-        LCM= B*C//self.gcd(B,C)
-        return LCM
-
-    def findcount(self, mid,B,C):
-        count = mid//B + mid//C - mid//self.lcm(B,C)
-        return count
-
 class Solution:
     # @param A : integer
     # @param B : integer
