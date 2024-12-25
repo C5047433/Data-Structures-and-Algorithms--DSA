@@ -17,14 +17,12 @@ Problem Constraints
 
 
 Input Format
-
 The first argument is an integer array A.
 The second argument is an integer B.
 
 
 
 Output Format
-
 Return an integer denoting the Bth element of the list.
 
 
@@ -32,29 +30,25 @@ Return an integer denoting the Bth element of the list.
 Example Input
 
 Input 1:
-
  A = [2, 4, 3, 2]
  B = 3
-Input 2:
 
+Input 2:
  A = [1, 5, 7, 3, 2]
  B = 9
 
 
 Example Output
-
 Output 1:
-
  9 
-Output 2:
 
+Output 2:
  14
 
 
 Example Explanation
 
 Explanation 1:
-
  All the triplets of the array A are:
 
  (2, 4, 3) = 9
