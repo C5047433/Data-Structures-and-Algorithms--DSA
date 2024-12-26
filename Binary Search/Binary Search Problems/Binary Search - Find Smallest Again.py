@@ -9,7 +9,7 @@ NOTE: A triplet consists of three elements from the array. Let's say if A[i], A[
 Problem Constraints
 
 3 <= N <= 500
-1 <= A[i] <= 108
+1 <= A[i] <= 10^8
 1 <= B <= (N*(N-1)*(N-2))/6
 
 Input Format

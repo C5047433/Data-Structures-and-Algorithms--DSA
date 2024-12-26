@@ -8,11 +8,11 @@ Find the number with the maximum number of occurrences and return an array C of 
 If there are several such numbers, your task is to find the minimum one.
 
 Problem Constraints
-1 <= N <= 10**5
+1 <= N <= 10^5
 
--10**9 <= A[i] <= 10**9
+-10^9 <= A[i] <= 10^9
 
-0 <= B <= 10**9
+0 <= B <= 10^9
 
 Input Format
 The first argument given is the integer array A.

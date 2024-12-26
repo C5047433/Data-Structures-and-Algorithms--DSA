@@ -11,7 +11,7 @@ NOTE:
 
 Problem Constraints
 
-0 <= A <= 109
+0 <= A <= 10^9
 
 
 Input Format

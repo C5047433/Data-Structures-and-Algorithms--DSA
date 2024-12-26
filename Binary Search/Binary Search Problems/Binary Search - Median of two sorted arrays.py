@@ -6,9 +6,9 @@ Round of the value to the floor integer [2.6=2, 2.2=2]
 
 Problem Constraints
 
-0 <= M <= 105
-0 <= N <= 105
--109 <= A[i], B[i] <= 109
+0 <= M <= 10^5
+0 <= N <= 10^5
+-10^9 <= A[i], B[i] <= 10^9
 
 
 Input Format

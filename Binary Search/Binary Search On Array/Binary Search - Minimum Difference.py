@@ -9,7 +9,7 @@ Determine the minimum cost of the newly built array.
 Problem Constraints
 2 <= A <= 1000
 2 <= B <= 1000
-1 <= C[i][j] <= 106
+1 <= C[i][j] <= 10^6
 
 
 Input Format

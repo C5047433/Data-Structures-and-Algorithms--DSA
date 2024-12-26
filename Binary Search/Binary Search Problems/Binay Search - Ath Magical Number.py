@@ -12,7 +12,7 @@ Note: Ensure to prevent integer overflow while calculating.
 
 Problem Constraints
 
-1 <= A <= 109
+1 <= A <= 10^9
 
 2 <= B, C <= 40000
 
