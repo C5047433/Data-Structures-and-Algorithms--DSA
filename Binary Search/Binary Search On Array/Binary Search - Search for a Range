@@ -10,8 +10,8 @@ If B is not found in A, return [-1, -1].
 Note : Note: The time complexity of your algorithm must be O(log n)..
 
 Problem Constraints
-1 <= N <= 106
-1 <= A[i], B <= 109
+1 <= N <= 10^6
+1 <= A[i], B <= 10^9
 
 
 Input Format:

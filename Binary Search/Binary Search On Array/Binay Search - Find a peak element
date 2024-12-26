@@ -9,7 +9,7 @@ Users are expected to solve this in O(log(N)) time. The array may contain duplic
 
 Problem Constraints
 1 <= |A| <= 100000
-1 <= A[i] <= 109
+1 <= A[i] <= 10^9
 
 
 Input Format

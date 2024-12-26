@@ -9,9 +9,9 @@ Your solution should have a time complexity of O(log(N)).
 
 
 Problem Constraints
-1 <= N <= 105
-1 <= A[i] <= 105
-1 <= B <= 105
+1 <= N <= 10^5
+1 <= A[i] <= 10^5
+1 <= B <= 10^5
 
 
 Input Format
