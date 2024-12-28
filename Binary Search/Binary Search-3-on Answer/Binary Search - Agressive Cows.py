@@ -42,36 +42,36 @@ The minimum distance will be 1.
 
 CODE:
 
-class Solution:
-    # @param A : integer
-    # @param B : integer
-    # @param C : list of integers
-    # @return an integer
-    def agressiveCows(A, B):
-        A.sort() #sort the stalls
-        n = len(A)
-        l = 1
-        h = A[n-1] - A[0]
+# @param A : integer
+# @param B : integer
+# @param C : list of integers
+# @return an integer
 
-        while l <= h:
-            mid = ( l + h ) //2 
+def agressiveCows(A, B):
+    A.sort() #sort the stalls
+    n = len(A)
+    l = 1
+    h = A[n-1] - A[0]
 
-            if count_of_cows(A, mid, n) >= B:
-                l = mid + 1 
-                ans = mid 
-            else:
-                h = mid - 1
+    while l <= h:
+        mid = ( l + h ) //2 
 
-        return ans
+        if count_of_cows(A, mid, n) >= B:
+            l = mid + 1 
+            ans = mid 
+        else:
+            h = mid - 1
 
-    def count_of_cows( A, mid, n):
-        count = 1 
-        position = A[0]  #first placement of cow
-        #distance is greaterthan mid, we can place a cow, start fresh at the position to see next placement of cow
-        for i in range(1, n):
-            if A[i] - position >= mid:
-                count +=1
-                position = A[i]
+    return ans
 
-        return count
+def count_of_cows( A, mid, n):
+    count = 1 
+    position = A[0]  #first placement of cow
+    #distance is greaterthan mid, we can place a cow, start fresh at the position to see next placement of cow
+    for i in range(1, n):
+        if A[i] - position >= mid:
+            count +=1
+            position = A[i]
+
+    return count
 
