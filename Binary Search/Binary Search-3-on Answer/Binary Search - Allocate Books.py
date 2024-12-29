@@ -63,7 +63,6 @@ CODE:
 
 # @param A : integer
 # @param B : integer
-# @param C : list of integers
 # @return an integer
 
 def books(A, B):
