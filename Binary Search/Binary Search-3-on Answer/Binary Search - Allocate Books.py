@@ -71,7 +71,7 @@ def books(A, B):
     h = sum(A)
     ans = -1
 
-    #if No of surident are greater than books then return -1
+    #Edge Case: if No of students are greater than books then return -1
     if B > len(A):
         return ans
 
@@ -79,7 +79,7 @@ def books(A, B):
     while l <= h:
         mid = (l + h) // 2
 
-        #if no of student are less after distributin mid pages then lets check if we can reduce pages 
+        #if no of student are less after distributing mid count of pages then lets check if we can reduce pages else increase
         if student_count(A, mid ) <= B:
             ans = mid
             h = mid - 1 #decrement pages
