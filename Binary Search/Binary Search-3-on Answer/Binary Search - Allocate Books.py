@@ -14,8 +14,8 @@ Calculate and return that minimum possible number.
 NOTE: Return -1 if a valid assignment is not possible.
 
 Problem Constraints
-1 <= N <= 105
-1 <= A[i], B <= 105
+1 <= N <= 10^5
+1 <= A[i], B <= 10^5
 
 Input Format
 The first argument given is the integer array A.
