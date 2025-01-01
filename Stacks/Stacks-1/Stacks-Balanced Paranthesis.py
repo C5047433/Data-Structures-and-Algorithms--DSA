@@ -11,8 +11,8 @@ Input Format
 The first and the only argument of input contains the string A having the parenthesis sequence.
 
 Output Format
-Return 0 if the parenthesis sequence is not balanced.
-Return 1 if the parenthesis sequence is balanced.
+Return False if the parenthesis sequence is not balanced.
+Return True if the parenthesis sequence is balanced.
 
 Example Input
 Input 1:
