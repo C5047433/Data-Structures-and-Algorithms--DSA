@@ -30,8 +30,6 @@ The third argument is an array C of size A having (ID/0).
 Output Format
 Return the "ID" of the player who possesses the ball after A passes.
 
-
-
 Example Input
 Input 1:
  A = 10
