@@ -49,23 +49,30 @@ CODE:
 
 from collections import deque
 class Solution:
-  # @param A : string
-  # @return a strings
+  """
+  Removes consecutive duplicate characters from a string.
+  
+  :param A: Input string.
+  :return: Modified string with consecutive duplicates removed.
+  """
   def double_char_trouble(self, A):
 
-    st = deque()
+    stack = deque()
 
     for i in range(len(A)):
-      
-      if len(st) > 0 and  st[-1] == A[i]:
-        st.pop()
+
+      #if the top element in stack, the element from the array matches, pop from stack
+      if len(stack) > 0 and  stack[-1] == A[i]:
+        stack.pop()
       else:
-        st.append(A[i])
+       #if it is uniqu element then push it to stack
+        stack.append(A[i])
 
     result = []
 
-    while len(st) > 0 :
-      result.append(st.pop())
+   #build result by popping element from stack
+    while len(stack) > 0 :
+      result.append(stack.pop())
 
     return "".join(result[::-1])
       
