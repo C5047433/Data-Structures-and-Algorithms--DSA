@@ -97,7 +97,7 @@ class Solution:
         '''
         Update below line incase if you are woking on you own compiler like google colab or any other to test and print inputs
         
-        comment last line94 from above code and uncomment below lines(line 97 -line 132): 
+        comment last line - 94 from above code and uncomment below lines(line 103 -line 132): 
         #return = head2
 
         temp = head2
