@@ -59,7 +59,7 @@ class Solution:
     '''
     Update below line incase if you are woking on you own compiler like google colab or any other to test and print inputs
         
-    comment last line from above code and uncomment below lines: 
+    comment last line57 from above code and uncomment lines64 - line87: 
     #return prev
     temp = prev
     while temp != None:
@@ -84,6 +84,7 @@ node6.next = None
 
 solution = Solution()
 new_head = solution.reverse_linkedlist(node1)
+'''
 
 
     
