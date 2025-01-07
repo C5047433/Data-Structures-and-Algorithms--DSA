@@ -48,7 +48,6 @@ class Solution:
     prev = None
 
     while current is not None:
-      if 
       nxt = current.next
       current.next = prev
       prev = current
