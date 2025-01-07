@@ -44,38 +44,37 @@ class Node:
     self.next = None
 
 class Solution:
-  def Delete_in_LinkedList(self, A, k):
+  def Delete_in_LinkedList(self, A, B):
+    temp = A
 
-    temp = A
-    for i in range(p-1):
+    #Delete Head by returning 1st index
+    if B == 0:
+      return temp.next
+
+    #Traverse to the (B-1)-th node
+    for i in range(B-1):
       temp = temp.next
+    # Skip the B-th node
     temp.next = temp.next.next
-    
+
+    ## Print the updated linked list index value
     temp = A
-    for i in range(p):
+    for i in range(B):
       temp = temp.next
     return temp.val
 
-    return A
     
     '''
-    Update below line incase if you are woking on you own compiler like google colab or any other to test and print inputs
+    Update below line incase if you are woking on you own compiler like google colab or any other to test and print outputs
     
-    comment last line - 59 from above code and uncomment below lines(line 67 -line 90): 
-    #return A
-
-    temp = A
-    while temp != None:
-      print(temp.val, end=",")
-      temp = temp.next
+    comment last line - 59 from above code and uncomment below lines(line 65 -line 83): 
 
 node1 = Node(1)
 node2 = Node(2)
 node3= Node(3)
 node4= Node(7)
 node5= Node(10)
-node6 = Node(4)
-node7 = Node(3)
+node6= Node(4)
 
 node1.next = node2
 node2.next = node3
@@ -87,7 +86,7 @@ node6.next = None
 
 solution = Solution()
 
-new_head = solution.ele_deletion(node1, k=7 )
+new_head = solution.Delete_in_LinkedList(node1, p=3 )
 '''
 
         
