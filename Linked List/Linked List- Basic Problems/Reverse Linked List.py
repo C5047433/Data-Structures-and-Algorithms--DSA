@@ -56,7 +56,7 @@ class Solution:
     return prev
 
     '''
-    Update below line incase if you are woking on you own compiler like google colab or any other to test and print inputs
+    Update below line incase if you are woking on you own compiler like google colab or any other to test and print outputs
         
     comment last line57 from above code and uncomment lines64 - line87: 
     #return prev
