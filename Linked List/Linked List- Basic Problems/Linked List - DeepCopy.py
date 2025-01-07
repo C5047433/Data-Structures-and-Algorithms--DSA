@@ -95,7 +95,7 @@ class Solution:
 
          
         '''
-        Update below line incase if you are woking on you own compiler like google colab or any other to test and print inputs
+        Update below line incase if you are woking on you own compiler like google colab or any other to test and print outputs
         
         comment last line from above code: 
         #return = head2
