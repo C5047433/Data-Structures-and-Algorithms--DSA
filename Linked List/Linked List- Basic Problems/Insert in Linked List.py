@@ -61,7 +61,7 @@ class Solution:
     if C == 0:
       newNode = ListNode(B)
       newNode.next = A
-      #return newNode
+      return newNode
 
     '''Note: THis is useful only to print after appending at the head
      temp = newNode
@@ -84,7 +84,7 @@ class Solution:
       newNode = ListNode(B)
       temp.next = newNode
       newNode.next = None
-      #return A
+      return A
     
     temp = A
     for i in range(C-1):
@@ -94,15 +94,13 @@ class Solution:
     newNode.next = temp.next
     temp.next = newNode
   
-    #return A
+    return A
 
     #print update the list after inserting at index C
     temp = A
     while temp is not None:
       print(temp.val, end="-->")
       temp = temp.next
-    #return temp.val
-
 
 
 node1 = ListNode(1)
