@@ -44,12 +44,82 @@ The new node is added after the first node of the linked list
 
 CODE:
 
+class ListNode:
+  def __init__(self, X):
+    self.val = X
+    self.next = None
+  
 class Solution:
-  def insert_linkedlist(A, B, C):
-    current = A
+  def insert_linkedlist(self, A, B, C):
+    temp = A
 
+    #if A is None return B
+    if A is None:
+      return ListNode(B)
+
+    #Inesrt at the head
     if C == 0:
-      NewNode(3)
-    for i in range(B -1)):
+      newNode = ListNode(B)
+      newNode.next = A
+      #return newNode
+
+    '''Note: THis is useful only to print after appending at the head
+     temp = newNode
+     while temp is not None:
+       print(temp.val)
+       temp = temp.next
+    '''
+
+    #inert at the tail
+    temp = A
+    count = 0
+    while temp is not None:
+      count += 1
+      temp = temp.next
+
+    if C > count:
+      temp = A
       while temp.next is not None:
-        tem= 
+        temp = temp.next
+      newNode = ListNode(B)
+      temp.next = newNode
+      newNode.next = None
+      #return A
+    
+    temp = A
+    for i in range(C-1):
+        temp = temp.next
+
+    newNode = ListNode(B)
+    newNode.next = temp.next
+    temp.next = newNode
+  
+    #return A
+
+    #print update the list after inserting at index C
+    temp = A
+    while temp is not None:
+      print(temp.val, end="-->")
+      temp = temp.next
+    #return temp.val
+
+
+
+node1 = ListNode(1)
+node2 = ListNode(2)
+node3= ListNode(3)
+node4= ListNode(7)
+node5= ListNode(10)
+node6= ListNode(4)
+
+node1.next = node2
+node2.next = node3
+node3.next = node4
+node4.next = node5
+node5.next = node6
+node6.next = None
+
+solution = Solution()
+
+print(solution.insert_linkedlist(node1, B=11, C=7))
+
