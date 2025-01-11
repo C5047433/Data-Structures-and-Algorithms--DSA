@@ -50,7 +50,20 @@ class Solution:
       current = current.next
     return A
 
-#print the non duplicate Linked List
+'''
+To test this code in your own environment (e.g., Google Colab or standalone script), 
+uncomment(line 66 to line 117)-  the below helper functions and linked list setup code. Platforms like LeetCode 
+may already provide linked list creation and testing infrastructure.
+
+Follow these steps:
+1. Uncomment the `print_list` function and the linked list setup section below.
+2. Use this setup to test the `remove_duplicates` method in a local environment.
+3. Ensure that the `Solution` class and `Node` class are defined before running the test code.
+
+'''
+
+'''
+# Helper function to print the linked list
 def print_list(A): 
     """
     Travese the updated listed list 
@@ -103,3 +116,4 @@ new_head = solution.remove_duplicates(node1)
 
 #print output
 print_list(new_head)
+'''
