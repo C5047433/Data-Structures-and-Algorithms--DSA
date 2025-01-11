@@ -85,14 +85,14 @@ class Solution:
       temp.next = newNode
       newNode.next = None
       return A
-    
-    temp = A
-    for i in range(C-1):
-        temp = temp.next
-
-    newNode = ListNode(B)
-    newNode.next = temp.next
-    temp.next = newNode
+    else:
+      temp = A
+      for i in range(C-1):
+          temp = temp.next
+  
+      newNode = ListNode(B)
+      newNode.next = temp.next
+      temp.next = newNode
   
     return A
 
