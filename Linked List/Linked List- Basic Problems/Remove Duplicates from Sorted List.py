@@ -57,7 +57,7 @@ def print_list(A):
     
     :return the updated listed
     """   
-    
+ 
     current = A
     while current:
       print(current.val, end="->")
@@ -103,15 +103,3 @@ new_head = solution.remove_duplicates(node1)
 
 #print output
 print_list(new_head)
-
-
-  
-   
-
-
-  
- 
-   
-  
-
-
