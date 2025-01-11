@@ -28,4 +28,7 @@ Explanation 1:
 
 CODE:
 
+class Solution:
+ def remove_duplicated():
+
 
