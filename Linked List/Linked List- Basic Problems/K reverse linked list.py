@@ -3,7 +3,7 @@ Given a singly linked list A and an integer B, reverse the nodes of the list B a
 
 
 Problem Constraints
-1 <= |A| <= 103
+1 <= |A| <= 10^3
 B always divides A
 
 
