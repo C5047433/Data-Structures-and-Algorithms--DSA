@@ -4,7 +4,7 @@ Given a binary tree A. Check whether it is possible to partition the tree to two
 
 Problem Constraints
 1 <= size of tree <= 100000
-0 <= value of node <= 109
+0 <= value of node <= 10^9
 
 
 Input Format
@@ -12,7 +12,7 @@ First and only argument is head of tree A.
 
 
 Output Format
-Return 1 if the tree can be partitioned into two trees of equal sum else return 0.
+Return True if the tree can be partitioned into two trees of equal sum else return False.
 
 
 Example Input
@@ -34,9 +34,9 @@ Input 2:
 
 Example Output
 Output 1:
- 1
+ True
 Output 2:
- 0
+ False
 
 
 Example Explanation
