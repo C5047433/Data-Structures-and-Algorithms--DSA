@@ -4,11 +4,12 @@ Implement a Stack Data Structure
 
 A stack is a linear data structure that follows the Last In, First Out (LIFO) principle, where the most recently added element is the first to be removed. Your task is to implement a stack with the following functionalities:
 
-Push an Element (push): Add an element to the top of the stack.
-Pop an Element (pop): Remove and return the top element from the stack. If the stack is empty, raise an error.
-Peek (peek): Retrieve the top element of the stack without removing it. If the stack is empty, raise an error.
-Check if Empty (is_empty): Return True if the stack is empty; otherwise, return False.
-Get Stack Size (size): Return the number of elements currently in the stack.
+(1). Push an Element (push): Add an element to the top of the stack.
+(2). Pop an Element (pop): Remove and return the top element from the stack. If the stack is empty, raise an error.
+(3). Peek (peek): Retrieve the top element of the stack without removing it. If the stack is empty, raise an error.
+(4). Check if Empty (is_empty): Return True if the stack is empty; otherwise, return False.
+(5). Get Stack Size (size): Return the number of elements currently in the stack.
+
 Input:
 
 The input to your program will consist of a sequence of operations performed on the stack, such as:
