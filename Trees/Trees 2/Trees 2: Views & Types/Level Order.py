@@ -73,7 +73,7 @@ class Solution:
 
         #intialize a array to append array of nodes at each level
         final = []
-        #initalize a queueueue to add elements at at each level and use necessary deque functions 
+        #initalize a queue to add elements at at each level and use necessary deque functions 
         queue = deque()
         #if A is not empty then add element to q else return as empty
         if A is not None:
