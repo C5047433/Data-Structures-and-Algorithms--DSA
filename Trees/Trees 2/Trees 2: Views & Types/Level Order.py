@@ -73,28 +73,28 @@ class Solution:
 
         #intialize a array to append array of nodes at each level
         final = []
-        #initalize a queue to add elements at at each level and use necessary deque functions 
-        q = deque()
+        #initalize a queueueue to add elements at at each level and use necessary deque functions 
+        queue = deque()
         #if A is not empty then add element to q else return as empty
         if A is not None:
-            q.append(A)
+            queue.append(A)
             #intialize last to current node i.e root at the level
             #last  = A.val
         else:
             return []
 
-        while len(q) > 0:
+        while len(queue) > 0:
             #at each level intialize a array to capture all the elements at the arrow
             ans = []
             #till the lenght of Q, remove first elemtn from the Q, add left child and right child if they exists 
-            for i in range(len(q)):
-                x = q.popleft()
+            for i in range(len(queue)):
+                x = queue.popleft()
                 ans.append(x.val)
 
                 if x.left is not None:
-                    q.append(x.left)
+                    queue.append(x.left)
                 if x.right is not None:
-                    q.append(x.right)
+                    queue.append(x.right)
                     
             #Keep appending each level node elements and return the output   
             final.append(ans)
