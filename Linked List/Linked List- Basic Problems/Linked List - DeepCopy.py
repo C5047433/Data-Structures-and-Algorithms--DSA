@@ -97,7 +97,7 @@ class Solution:
         '''
         Update below line incase if you are woking on you own compiler like google colab or any other to test and print outputs
         
-        comment last line from above code: 
+        comment last line - 94 from above code and uncomment below lines(line 103 -line 132): 
         #return = head2
 
         temp = head2
@@ -109,26 +109,26 @@ class Solution:
         return head2
 
 
-        node1 = RandomListNode(1)
-        node2 = RandomListNode(2)
-        node3 = RandomListNode(3)
-        node4 = RandomListNode(4)
-        node5 = RandomListNode(5)
-        
-        node1.next = node2
-        node2.next = node3
-        node3.next = node4
-        node4.next = node5
-        
-        node1.random = node5
-        node2.random = node4
-        node3.random = node1
-        node4.random = node3
-        node5.random = node2
-        
-        
-        solution = Solution()
-        new_head = solution.copyRandomList(node1)
+node1 = RandomListNode(1)
+node2 = RandomListNode(2)
+node3 = RandomListNode(3)
+node4 = RandomListNode(4)
+node5 = RandomListNode(5)
+
+node1.next = node2
+node2.next = node3
+node3.next = node4
+node4.next = node5
+
+node1.random = node5
+node2.random = node4
+node3.random = node1
+node4.random = node3
+node5.random = node2
+
+
+solution = Solution()
+new_head = solution.copyRandomList(node1)
         '''        
 
 
