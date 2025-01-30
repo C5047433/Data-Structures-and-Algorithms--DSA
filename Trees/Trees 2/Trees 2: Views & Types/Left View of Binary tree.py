@@ -113,4 +113,3 @@ root.left.left.left = TreeNode(8)
 
 sol = Solution()
 print(sol.left_view(root))  # Output: [1, 2, 4, 8]
-
