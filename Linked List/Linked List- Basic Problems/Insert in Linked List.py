@@ -6,10 +6,10 @@ In case the pos is 0, simply insert the new node at head only.
 Follow 0-based indexing for the node numbering.
 
 Problem Constraints
-0 <= size of linked list <= 105
-1 <= value of nodes <= 109
-1 <= B <= 109
-0 <= C <= 105
+0 <= size of linked list <= 10^5
+1 <= value of nodes <= 10^9
+1 <= B <= 10^9
+0 <= C <= 10^5
 
 Input Format
 The first argument A is the head of a linked list.
