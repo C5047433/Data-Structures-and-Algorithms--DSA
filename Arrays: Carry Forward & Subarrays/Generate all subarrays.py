@@ -52,7 +52,11 @@ class Solution:
       #iterate over the array for each element as si(start index)
       for si in range(len(A)):
           for ei in range(si, len(A)):
-              result.append(A[si:ei+1])
+            subarray = []
+            for j in range(si, ei+1):
+              subarray.append(A[j])
+              
+            result.append(subarray)
           
       return result
     
