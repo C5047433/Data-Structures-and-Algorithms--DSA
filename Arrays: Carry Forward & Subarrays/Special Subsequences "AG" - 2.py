@@ -38,7 +38,7 @@ Explanation 2:
 
 
 =======================================
-  CODE:
+  CODE using python style:
 =======================================
 
 class Solution:
@@ -58,4 +58,32 @@ class Solution:
               
         #finally once all the pairs are calucalted return the count of pairs
         return a_g_pairs
+
+
+
+
+==========================================
+Code Using prefixSum menthod:
+==========================================
+
+class Solution:
+    # @param A : string
+     # @return an long
+    def solve(self, A):
+
+     psum = [0] * len(A)
+     if A[0] == "A":
+        psum[0] = 1
+
+     for i in range(1, len(A)):
+        if A[i] == "A":
+           psum[i] = 1 + psum[i-1]
+        else:
+           psum[i] = psum[i-1]
+
+     count_a_g = 0
+     for i in range(1, len(A)):
+        if A[i] == "G":
+           count_a_g += psum[i-1]
+     return count_a_g
             
