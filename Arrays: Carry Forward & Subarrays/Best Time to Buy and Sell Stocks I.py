@@ -44,29 +44,29 @@ CODE:
 ============================================
 
 class Solution:
-	# @param A : tuple of integers
-	# @return an integer
-	def maxProfit(self, A):
-    """
-    Calculate the maximum profit that can be achieved by
-    buying and selling stocks on different days.
+	
+     def maxProfit(self, A):
+        
+        """
+        Calculate the maximum profit that can be achieved by
+        buying and selling stocks on different days.
 
-    Args:
-    A (list[int]): List of stock prices on consecutive days.
+        Args:
+        A (list[int]): List of stock prices on consecutive days.
 
-    Returns:
-    int: Maximum profit achievable.
-    """
-    
+        Returns:
+        int: Maximum profit achievable.
+        """
+        
 
-    if not A:
-       return 0
-    
-    min_price = A[0] #Intialize minimum value to A[0]
-    max_profit = 0  #Initilaize max_profit to 0
+        if not A:
+            return 0
+        
+        min_price = A[0] #Intialize minimum value to A[0]
+        max_profit = 0  #Initilaize max_profit to 0
 
-    for price in A:
-       min_price = min(min_price, price)  #iterate over all the values and check the minimum 
-       max_profit = max(max_profit, price - min_price) # Difference over every value to get max profit
-    
-    return max_profit #return Max_profit
+        for price in A:
+            min_price = min(min_price, price)  #iterate over all the values and check the minimum 
+            max_profit = max(max_profit, price - min_price) # Difference over every value to get max profit
+        
+        return max_profit #return Max_profit
