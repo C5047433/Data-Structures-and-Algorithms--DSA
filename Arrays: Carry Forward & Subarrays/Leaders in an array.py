@@ -76,4 +76,4 @@ class Solution:
             maximum = A[i]
             leaders.append(maximum)
         
-        return result  
+        return leaders  
