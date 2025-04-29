@@ -42,3 +42,35 @@ Even length good subarrays = {1, 2}
 Odd length good subarrays = {1, 2, 3}, {1, 2, 3, 4, 5}, {2, 3, 4}, {3, 4, 5}, {5} 
 Explanation 1:
 There are 36 good subarrays
+
+
+
+======================================
+CODE:
+======================================
+
+class Solution:
+    # @param A : list of integers
+    # @param B : integer
+    # @return an integer
+    def solve(self, A, B):
+      n = len(A)
+      count = 0
+      # Iterate over all possible start indices of subarrays
+      for si in range(n):
+        current_sum = 0
+        # For each start index, extend the subarray to all possible end indices
+        for ei in range(si, n):
+          # Add the current element to the running sum of the subarray
+          current_sum += A[ei]
+          # Check subarray conditions:
+          # - If length is even and sum is less than B, count it
+
+          if (ei - si + 1) % 2 == 0 and current_sum < B:
+            count += 1
+
+          # - If length is odd and sum is greater than B, count it
+          elif (ei - si + 1) % 2 != 0 and current_sum > B:
+            count += 1
+            
+      return count
