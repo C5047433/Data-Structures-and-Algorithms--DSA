@@ -66,3 +66,6 @@ class Solution:
 
         # Step 5: No Noble Integer found
         return -1
+
+s = Solution()
+print(s.solve([3, 2, 1, 3]))  # Output: 1 (since 2 is a noble integer)
