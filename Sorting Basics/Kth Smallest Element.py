@@ -45,12 +45,33 @@ Explanation 2:
 CODE using simple sorting:
 =======================================
 class Solution:
-	# @param A : tuple of integers
-	# @param B : integer
-	# @return an integer
-	def kthsmallest(self, A, B):
-      A = list(A)
-      A.sort()
-      return A[B - 1]
+    # @param A : tuple of integers
+    # @param B : integer
+    # @return an integer
+    def kthsmallest(self, A, B):
+	A = list(A)
+	A.sort()
+	return A[B - 1]
 
+
+========================================
+CODE using SELECTION SORT:
+========================================
+
+class Solution:
+    def kthsmallest(self, A, B):
+        # Step 1: Implement selection sort until B-th smallest is found
+        for i in range(len(A)):
+            min_idx = i  # Assume the current i is the smallest
+
+            # Step 2: Find the index of the minimum element in remaining array
+            for j in range(i + 1, len(A)):
+                if A[min_idx] > A[j]:
+                    min_idx = j
+
+            # Step 3: Swap the current element with the found minimum
+            A[i], A[min_idx] = A[min_idx], A[i]
+
+        # Step 4: Return the k-th smallest element (1-based index)
+        return A[B - 1]
 
