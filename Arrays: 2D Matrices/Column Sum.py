@@ -45,15 +45,25 @@ class Solution:
     # @return a list of integers
     def solve(self, A):
         result = []
-        
-        #iterate over colummn and then rows
-        for j in range(len(A[0]):
-          column_sum = 0
-          
-          for i in range(len(A)):
-            column_sum += A[i][j]
-            
-          result.append(column_sum)
+
+        # Iterate over columns
+        for j in range(len(A[0])):
+            column_sum = 0
+
+            # Iterate over rows
+            for i in range(len(A)):
+                column_sum += A[i][j]  # Sum each element in the column
+
+            result.append(column_sum)  # Append the sum to the result
+
         return result
+
+s = Solution()
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+print(s.solve(matrix))  # Output: [12, 15, 18]
           
             
