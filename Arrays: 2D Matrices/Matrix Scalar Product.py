@@ -72,3 +72,11 @@ class Solution:
             for j in range(len(A[0])):
                 A[i][j] = B * A[i][j]
         return A
+
+
+s = Solution()
+matrix = [
+    [1, 2],
+    [3, 4]
+]
+print(s.solve(matrix, 3))  # Output: [[3, 6], [9, 12]]
