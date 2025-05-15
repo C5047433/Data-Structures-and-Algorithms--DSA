@@ -41,7 +41,7 @@ After transposing the matrix, A becomes [[1, 1, 1], [2, 2, 2]]
 
 
 =================================
-CODE:
+CODE with space complexity:
 ==================================
 class Solution:
     # @param A : list of list of integers
@@ -51,8 +51,28 @@ class Solution:
         
         mat=[[0]*len(A) for _ in range(len(A[0]))]
         for i in range(len(A)):
-            #makesure to rotate colum from (i+1) to lenghtof columns i.e len(A[0])
-            #if we rotate every elemtn then it becomes origin  matrix element 
+            
             for j in range(len(A[0])):
                 mat[j][i]=A[i][j]
         return mat
+
+
+=================================
+CODE without space complexity:
+==================================
+class Solution:
+    # @param A : list of list of integers
+    # @return a list of list of integers
+    def solve(self, A):
+        #every element oafter transpose gets swapped i.e (i,j) becomes (j,i)
+     n = len(A)
+     
+     for i in range(n):
+      #makesure to rotate colum from (i+1) to lenghtof columns i.e len(A[0])
+      for j in range(i+1, n):
+       
+            #if we rotate every elemtn then it becomes origin  matrix element 
+       A[j][i], A[i][j] = A[i][j], A[j][i]
+       
+     return A
+
