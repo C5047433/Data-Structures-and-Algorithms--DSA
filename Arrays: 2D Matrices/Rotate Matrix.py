@@ -57,3 +57,23 @@ Explanation 2:
  9 goes to 7, 7 goes to 1
  8 goes to 4, 4 goes to 2
 
+
+
+=======================================
+  CODE:
+=======================================
+class Solution:
+    # @param A : list of list of integers
+    def solve(self, A):
+        
+        n = len(A)
+        #step1 , transpose the matrix
+        for i in range(len(A)):
+            for j in range(i+1,len(A)):
+                A[i][j], A[j][i] = A[j][i], A[i][j]
+
+        #step2 reverse each row to get the result of 90 degree clockwise rotated matrix
+        for i in range(len(A)):
+            A[i] = A[i][::-1]
+        return A
+
