@@ -42,7 +42,7 @@ Explanation 2:
 
 
  =================================
- CODE:
+ CODE using XOR:
  =================================
 
 class Solution:
