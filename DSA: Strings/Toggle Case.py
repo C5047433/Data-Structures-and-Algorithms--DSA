@@ -4,7 +4,7 @@ You have to toggle case of each character of string A. For e.g 'A' is changed to
 
 
 Problem Constraints
-1 <= N <= 105
+1 <= N <= 10^5
 A[i] ∈ ['a'-'z', 'A'-'Z']
 
 
@@ -76,7 +76,7 @@ class Solution:
         A = list(A)
         
         for i in range(len(A)):
-            if ord(A[i]) >= 97 and ord(A[i]) <= 122:
+            if 97 <= ord(A[i]) <= 122:
                 A[i] = chr(ord(A[i]) - 32)  #lowercase to uppercase
             else:
                 A[i] = chr(ord(A[i]) + 32)  #uppercase to lowercase
