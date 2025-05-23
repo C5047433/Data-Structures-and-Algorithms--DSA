@@ -66,3 +66,16 @@ class Solution:
 
       # Join the list back into a string and return
       return "".join(revstr)
+
+
+========================================
+CODE with INBUILT Function:
+========================================
+
+class Solution:
+  """
+  Provides a method to reverse a string using a two-pointer technique.
+  """
+
+  def solve(self, A):
+   return A[::-1]
