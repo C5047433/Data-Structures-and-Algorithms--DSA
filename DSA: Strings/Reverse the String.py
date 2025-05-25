@@ -42,7 +42,7 @@ We reverse the string word by word so the string becomes "ib is this".
 
 
 ====================================
-  CODE:
+  CODE without INBUILT function:
 ====================================
 
 class Solution:
@@ -74,3 +74,17 @@ class Solution:
 
         # Rejoin the words into a single string
         return " ".join(words)
+
+
+
+====================================
+  CODE with INBUILT function:
+====================================
+
+class Solution:
+    """
+    Provides a method to reverse the order of words in a sentence.
+    """
+    def solve(self, A):
+        A = A.split()
+        return " ".join(A[::-1])
